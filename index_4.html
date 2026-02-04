@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Outwest Energy — Experienced Operators. New Energy Venture.</title>
+<meta name="description" content="Operator-led energy company acquiring and operating assets across Western Canada.">
+<meta name="theme-color" content="#1A293E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1A293E;--blue:#2F87C3;--blue-dk:#2574a8;--charcoal:#232323;--mist:#F5F7FA;--tint:#D9EAF6;--teal:#8FBFC9;--white:#FFF;--font:'Jost',sans-serif;--ease:cubic-bezier(.16,1,.3,1);--max:1200px;--hdr:80px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{font-family:var(--font);font-weight:300;color:var(--charcoal);background:var(--white);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul,ol{list-style:none}
+.ctr{max-width:var(--max);margin:0 auto;padding:0 2rem}
+.ctr-sm{max-width:900px;margin:0 auto;padding:0 2rem}
+.ctr-xs{max-width:720px;margin:0 auto;padding:0 2rem}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.slbl{font-size:.73rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);margin-bottom:1rem}
+.sttl{font-size:clamp(2rem,4vw,3rem);font-weight:300;letter-spacing:.03em;color:var(--navy);line-height:1.2;margin-bottom:2rem}
+.sttl strong{font-weight:500}
+.ssub{font-size:1.1rem;color:rgba(35,35,35,.75);max-width:640px;line-height:1.8}
+.dark .slbl{color:var(--teal)}.dark .sttl{color:var(--mist)}.dark .ssub{color:rgba(245,247,250,.65)}
+.prose{color:rgba(35,35,35,.75);font-size:1.05rem;margin-bottom:1rem}
+.prose:last-of-type{margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border-radius:4px;font-family:var(--font);font-size:.85rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;border:none;transition:all .3s var(--ease)}
+.btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.btn-p{background:var(--blue);color:var(--white)}.btn-p:hover{background:var(--blue-dk);transform:translateY(-2px);box-shadow:0 8px 30px rgba(47,135,195,.3)}
+.btn-ol{background:0 0;color:var(--mist);border:1px solid rgba(245,247,250,.25)}.btn-ol:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.btn-od{background:0 0;color:var(--navy);border:1px solid rgba(26,41,62,.12)}.btn-od:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.btn-blk{width:100%;justify-content:center}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.vis{opacity:1;transform:translateY(0)}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}.rv-d4{transition-delay:.4s}
+
+/* Page transitions */
+.page{display:none;opacity:0;transition:opacity .3s ease}
+.page.active{display:block;animation:fadeIn .4s ease forwards}
+
+/* Header */
+.hdr{position:fixed;top:0;left:0;right:0;height:var(--hdr);z-index:1000;border-bottom:1px solid transparent;transition:all .35s ease}
+.hdr.at-top{background:transparent}
+.hdr.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:rgba(26,41,62,.06);box-shadow:0 2px 40px rgba(26,41,62,.08)}
+.hdr-in{max-width:var(--max);margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:100%}
+.logo{display:flex;align-items:center;cursor:pointer}.logo svg{height:38px;width:auto}
+.logo-txt{transition:fill .35s}
+.hdr.at-top .logo-txt{fill:var(--mist)}
+.hdr.scrolled .logo-txt{fill:var(--navy)}
+.nav{display:flex;align-items:center;gap:.25rem}
+.nav a{font-size:.82rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;padding:.5rem .85rem;border-radius:4px;transition:color .3s,background .3s;cursor:pointer}
+.hdr.at-top .nav a{color:rgba(245,247,250,.85)}
+.hdr.scrolled .nav a{color:var(--navy)}
+.nav a:hover{color:var(--blue)}
+.nav a.act{color:var(--blue);background:rgba(47,135,195,.12)}
+.nav-cta{background:var(--blue)!important;color:var(--white)!important;padding:.55rem 1.4rem!important;margin-left:.5rem;border-radius:4px;transition:background .3s,transform .2s!important}
+.nav-cta:hover{background:var(--blue-dk)!important;transform:translateY(-1px)}
+.mob-tog{display:none;flex-direction:column;gap:5px;background:0 0;border:none;cursor:pointer;padding:4px}
+.mob-tog span{width:24px;height:2px;background:var(--navy);transition:transform .3s,opacity .3s}
+.hdr.at-top .mob-tog span{background:var(--mist)}
+.mob-tog.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.mob-tog.on span:nth-child(2){opacity:0}
+.mob-tog.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--navy);overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 80%,rgba(47,135,195,.08) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(143,191,201,.05) 0%,transparent 50%),linear-gradient(180deg,rgba(26,41,62,.95) 0%,var(--navy) 100%)}
+.hero::after{content:'';position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240'%3E%3Cpath d='M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55' fill='%232F87C3'/%3E%3C/svg%3E");background-size:clamp(1200px,160vw,2800px);background-repeat:no-repeat;background-position:center bottom -10%}
+.hero-ct{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:8rem 2rem;padding-top:calc(var(--hdr) + 6rem)}
+.hero h1{font-size:clamp(2.8rem,6vw,4.5rem);font-weight:200;letter-spacing:.02em;color:var(--mist);line-height:1.15;max-width:800px;margin-bottom:2rem;animation:fadeUp .8s var(--ease) .15s both}
+.hero h1 em{font-style:normal;color:var(--blue);font-weight:300}
+.hero-sub{font-size:1.15rem;font-weight:300;color:rgba(245,247,250,.65);max-width:560px;line-height:1.8;margin-bottom:4rem;animation:fadeUp .8s var(--ease) .3s both}
+.hero-acts{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s var(--ease) .45s both}
+.scroll-ind{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(245,247,250,.3);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;animation:fadeIn 1s 1.5s both}
+.scroll-ind::after{content:'';width:1px;height:40px;background:linear-gradient(to bottom,rgba(47,135,195,.5),transparent);animation:scrollLine 2s ease-in-out infinite}
+
+/* Page hero (subpages) */
+.pg-hero{position:relative;padding:calc(var(--hdr) + 6rem) 0 6rem;background:var(--navy);overflow:hidden}
+.pg-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 70%,rgba(47,135,195,.12) 0%,transparent 60%),radial-gradient(ellipse at 70% 30%,rgba(143,191,201,.08) 0%,transparent 50%)}
+.pg-hero::after{content:'';position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240'%3E%3Cpath d='M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55' fill='%232F87C3'/%3E%3C/svg%3E");background-size:clamp(1000px,140vw,2400px);background-repeat:no-repeat;background-position:center bottom -15%}
+.pg-hero .ctr{position:relative;z-index:2}
+.pg-hero h1{font-size:clamp(2.4rem,5vw,3.5rem);font-weight:200;letter-spacing:.02em;color:var(--mist);line-height:1.2;margin-bottom:1rem;animation:fadeUp .7s var(--ease) both}
+.pg-hero h1 em{font-style:normal;color:var(--blue);font-weight:300}
+.pg-hero .hero-sub{animation:fadeUp .7s var(--ease) .15s both;margin-bottom:0}
+.bc{font-size:.78rem;color:rgba(245,247,250,.45);margin-bottom:2rem;letter-spacing:.04em;animation:fadeUp .7s var(--ease) both}
+.bc a{color:var(--teal);cursor:pointer;transition:color .3s}.bc a:hover{color:var(--blue)}.bc i{margin:0 .4rem;font-style:normal}
+
+/* Sections */
+.sec{padding:8rem 0}
+.bg-m{background:var(--mist)}.bg-n{background:var(--navy)}.bg-w{background:var(--white)}
+
+/* Metrics */
+.mbar{background:var(--white);border-bottom:1px solid rgba(26,41,62,.06);padding:4rem 0}
+.mbar.dark{background:rgba(26,41,62,.97);border-bottom-color:rgba(245,247,250,.08)}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.mt{position:relative}
+.mt:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:rgba(26,41,62,.06)}
+.mbar.dark .mt:not(:last-child)::after{background:rgba(245,247,250,.08)}
+.mt-n{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;color:var(--blue);letter-spacing:.02em}
+.mt-l{font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:rgba(26,41,62,.5);margin-top:.25rem}
+.mbar.dark .mt-l{color:rgba(245,247,250,.45)}
+
+/* Cards */
+.cd{background:var(--white);border:1px solid rgba(26,41,62,.06);border-radius:8px;padding:2rem;transition:all .4s var(--ease)}
+.cd:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(26,41,62,.08);border-color:rgba(47,135,195,.25)}
+.cd-dk{background:rgba(245,247,250,.04);border:1px solid rgba(245,247,250,.08);border-radius:8px;padding:2rem;transition:all .4s var(--ease);position:relative;overflow:hidden}
+.cd-dk::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--teal));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.cd-dk:hover{background:rgba(245,247,250,.07);border-color:rgba(47,135,195,.2);transform:translateY(-4px)}
+.cd-dk:hover::before{transform:scaleX(1)}
+.ci{width:48px;height:48px;border-radius:8px;background:rgba(47,135,195,.12);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.ci svg{width:24px;height:24px;stroke:var(--blue);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cd h3,.cd-dk h3{font-size:1.15rem;font-weight:400;letter-spacing:.02em;margin-bottom:.75rem}
+.cd h3{color:var(--navy)}.cd-dk h3{color:var(--mist)}
+.cd p{font-size:.9rem;color:rgba(35,35,35,.6);line-height:1.7}.cd-dk p{font-size:.9rem;color:rgba(245,247,250,.45);line-height:1.7}
+.mcd{background:var(--white);border:1px solid rgba(26,41,62,.06);border-radius:8px;padding:1.5rem;text-align:center;transition:all .4s var(--ease)}
+.mcd:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(26,41,62,.06)}
+.mcd svg{width:32px;height:32px;stroke:var(--blue);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto .5rem}
+.mcd h3{font-size:.95rem;font-weight:500;color:var(--navy);margin-bottom:.25rem}
+.mcd p{font-size:.82rem;color:rgba(35,35,35,.6);line-height:1.6}
+
+/* Feature / Vision */
+.fc{background:var(--mist);border-radius:8px;padding:2.5rem;position:relative;overflow:hidden}
+.fc::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--blue),var(--teal))}
+.vi{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1rem}.vi:last-child{margin-bottom:0}
+.vic{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(47,135,195,.12);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.vic svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vit{font-weight:500;color:var(--navy);margin-bottom:2px;font-size:.95rem}
+.vid{font-size:.88rem;color:rgba(35,35,35,.6);line-height:1.6}
+.vis-box{background:var(--navy);border-radius:8px;padding:2.5rem;color:var(--mist)}
+.vis-box .slbl{color:var(--teal)}
+.vis-box p{font-size:1.3rem;font-weight:200;line-height:1.6;letter-spacing:.02em;color:var(--mist);font-style:italic}
+
+/* Timeline */
+.tl{position:relative;padding-left:3rem}
+.tl::before{content:'';position:absolute;left:.9rem;top:0;bottom:0;width:2px;background:var(--tint)}
+.tl-i{position:relative;padding-bottom:2rem}.tl-i:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-2.4rem;top:.4rem;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid var(--white);box-shadow:0 0 0 2px rgba(47,135,195,.25)}
+.tl-i h3{font-size:1.05rem;font-weight:500;color:var(--navy);margin-bottom:.25rem}
+.tl-i .tl-d{font-size:.78rem;color:var(--blue);font-weight:400;letter-spacing:.04em;margin-bottom:.5rem}
+.tl-i p{font-size:.9rem;color:rgba(35,35,35,.6);line-height:1.7}
+
+/* Team */
+.tb{display:grid;grid-template-columns:180px 1fr;gap:2rem;background:var(--white);border:1px solid rgba(26,41,62,.06);border-radius:8px;padding:2rem;transition:all .4s var(--ease);align-items:start;margin-bottom:2rem}
+.tb:hover{box-shadow:0 12px 40px rgba(26,41,62,.08);border-color:rgba(47,135,195,.25)}
+.tb-av{width:160px;height:160px;border-radius:8px;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.tb-av svg{width:48px;height:48px;stroke:var(--blue);fill:none;stroke-width:1.2;opacity:.4;stroke-linecap:round;stroke-linejoin:round}
+.tb h3{font-size:1.2rem;font-weight:500;color:var(--navy);margin-bottom:.15rem}
+.tb .trole{font-size:.76rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.75rem}
+.tb p{font-size:.9rem;color:rgba(35,35,35,.6);line-height:1.7}
+
+/* Accordion */
+.acc-i{border-bottom:1px solid rgba(26,41,62,.06)}
+.acc-t{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 0;background:0 0;border:none;cursor:pointer;font-family:var(--font);font-size:1.05rem;font-weight:400;color:var(--navy);text-align:left;transition:color .3s}
+.acc-t:hover{color:var(--blue)}
+.acc-t svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:2;transition:transform .3s var(--ease);flex-shrink:0}
+.acc-i.open .acc-t svg{transform:rotate(45deg)}
+.acc-c{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.acc-i.open .acc-c{max-height:500px}
+.acc-b{padding-bottom:1.25rem}.acc-b p{font-size:.92rem;color:rgba(35,35,35,.6);line-height:1.7}
+
+/* News */
+.news-item{background:var(--white);border:1px solid rgba(26,41,62,.06);border-radius:8px;padding:2rem;transition:all .4s var(--ease)}
+.news-item:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(26,41,62,.08);border-color:rgba(47,135,195,.25)}
+.news-date{font-size:.78rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem}
+.news-item h3{font-size:1.1rem;font-weight:500;color:var(--navy);margin-bottom:.5rem}
+.news-item p{font-size:.9rem;color:rgba(35,35,35,.6);line-height:1.7}
+.news-item a.news-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--blue);font-weight:400;margin-top:.75rem;letter-spacing:.04em;text-transform:uppercase;transition:gap .3s}
+.news-item a.news-link:hover{gap:.7rem}
+.news-item .news-src{font-size:.72rem;color:rgba(35,35,35,.4);margin-top:.25rem}
+.feed-loading{text-align:center;padding:4rem 0;color:rgba(35,35,35,.4)}
+.feed-loading .spinner{width:32px;height:32px;border:3px solid var(--tint);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem}
+.feed-tabs{display:flex;gap:.5rem;margin-bottom:3rem;flex-wrap:wrap}
+.feed-tab{padding:.5rem 1.2rem;border-radius:4px;font-family:var(--font);font-size:.82rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;border:1px solid rgba(26,41,62,.12);background:var(--white);color:var(--navy);transition:all .3s}
+.feed-tab:hover{border-color:var(--blue);color:var(--blue)}
+.feed-tab.active{background:var(--blue);color:var(--white);border-color:var(--blue)}
+
+/* Scrolling ticker */
+.ticker-wrap{overflow:hidden;background:var(--navy);border-bottom:1px solid rgba(245,247,250,.06);position:relative}
+.ticker-wrap::before,.ticker-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.ticker-wrap::before{left:0;background:linear-gradient(90deg,var(--navy),transparent)}
+.ticker-wrap::after{right:0;background:linear-gradient(270deg,var(--navy),transparent)}
+.ticker-label{position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;padding:0 1.5rem;background:var(--blue);color:var(--white);font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;z-index:3;white-space:nowrap}
+.ticker-label svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;margin-right:.5rem;stroke-linecap:round;stroke-linejoin:round}
+.ticker-track{display:flex;animation:tickerScroll var(--ticker-duration,60s) linear infinite;padding:.85rem 0 .85rem 140px}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:flex;align-items:center;white-space:nowrap;padding:0 2rem;flex-shrink:0}
+.ticker-item a{color:rgba(245,247,250,.75);font-size:.85rem;font-weight:300;transition:color .3s;display:flex;align-items:center;gap:.5rem}
+.ticker-item a:hover{color:var(--blue)}
+.ticker-src{color:var(--teal);font-size:.72rem;font-weight:400;margin-left:.5rem;opacity:.7}
+.ticker-dot{width:4px;height:4px;border-radius:50%;background:rgba(47,135,195,.5);flex-shrink:0;margin:0 .5rem}
+.ticker-empty{color:rgba(245,247,250,.35);font-size:.85rem;padding:0 2rem}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* Newsletter */
+.nl-sec{background:linear-gradient(135deg,var(--navy) 0%,#1e3350 100%);padding:5rem 0;position:relative;overflow:hidden}
+.nl-sec::before{content:'';position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240'%3E%3Cpath d='M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55' fill='%232F87C3'/%3E%3C/svg%3E");background-size:clamp(800px,120vw,1800px);background-repeat:no-repeat;background-position:center}
+.nl-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.nl-grid h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;color:var(--mist);line-height:1.3;margin-bottom:1rem}
+.nl-grid h2 em{font-style:normal;color:var(--blue);font-weight:300}
+.nl-grid p{color:rgba(245,247,250,.55);font-size:.95rem;line-height:1.7}
+.nl-form{display:flex;gap:.75rem}
+.nl-form input{flex:1;padding:.85rem 1.25rem;border:1px solid rgba(245,247,250,.12);border-radius:4px;background:rgba(245,247,250,.06);font-family:var(--font);font-size:.95rem;font-weight:300;color:var(--mist);outline:none;transition:border-color .3s}
+.nl-form input::placeholder{color:rgba(245,247,250,.3)}
+.nl-form input:focus{border-color:var(--blue);background:rgba(245,247,250,.08)}
+.nl-form button{padding:.85rem 2rem;border:none;border-radius:4px;background:var(--blue);color:var(--white);font-family:var(--font);font-size:.85rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:all .3s var(--ease)}
+.nl-form button:hover{background:var(--blue-dk);transform:translateY(-2px);box-shadow:0 8px 30px rgba(47,135,195,.3)}
+.nl-note{margin-top:.75rem;font-size:.78rem;color:rgba(245,247,250,.3)}
+.nl-note a{color:var(--teal);cursor:pointer;transition:color .3s}.nl-note a:hover{color:var(--blue)}
+.nl-ok{color:var(--teal);font-weight:400;display:none;animation:fadeUp .4s var(--ease) both}
+.nl-ok.show{display:block}
+
+/* Forms */
+.fcard{background:var(--mist);border-radius:8px;padding:2rem}
+.fg{margin-bottom:1rem}
+.fg label{display:block;font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:.4rem}
+.fg input,.fg textarea,.fg select{width:100%;padding:.75rem 1rem;border:1px solid rgba(26,41,62,.12);border-radius:4px;background:var(--white);font-family:var(--font);font-size:.95rem;font-weight:300;color:var(--charcoal);outline:none;transition:border-color .3s}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue)}
+.fg textarea{resize:vertical;min-height:120px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+/* CTA */
+.cta{background:var(--navy);padding:6rem 0;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 240'%3E%3Cpath d='M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55' fill='%232F87C3'/%3E%3C/svg%3E");background-size:clamp(900px,130vw,2200px);background-repeat:no-repeat;background-position:center bottom -20%}
+.cta .ctr{position:relative;z-index:2}
+.cta h2{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:300;color:var(--mist);margin-bottom:1rem;letter-spacing:.02em}
+.cta h2 em{font-style:normal;color:var(--blue);font-weight:300}
+.cta p{color:rgba(245,247,250,.65);font-size:1rem;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto}
+.cta .bg{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* Contact */
+.ct-i{display:flex;align-items:center;gap:.75rem;font-size:.95rem;color:var(--charcoal);margin-bottom:.75rem}
+.ct-i svg{width:20px;height:20px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.ct-box{background:var(--mist);border-radius:8px;padding:2rem}
+.ct-link{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--blue);font-weight:400;margin-bottom:.5rem;cursor:pointer;transition:gap .3s}
+.ct-link:hover{gap:.7rem}
+.ct-link svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round}
+
+/* Legal */
+.legal h3{font-size:1.15rem;font-weight:500;color:var(--navy);margin:2rem 0 .75rem}
+.legal p{color:rgba(35,35,35,.75);font-size:.95rem;margin-bottom:1rem;line-height:1.8;max-width:800px}
+.legal ul{list-style:disc;padding-left:1.5rem;margin-bottom:1rem;max-width:800px}
+.legal li{color:rgba(35,35,35,.75);font-size:.95rem;margin-bottom:.5rem;line-height:1.7}
+.legal-date{font-size:.85rem;color:var(--blue);font-weight:400;margin-bottom:2rem}
+
+/* Footer */
+.ftr{background:var(--navy);padding:4rem 0 2rem}
+.ftr-t{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;padding-bottom:4rem;border-bottom:1px solid rgba(245,247,250,.08)}
+.ftr-b p{color:rgba(245,247,250,.45);font-size:.88rem;margin-top:1rem;max-width:320px;line-height:1.7}
+.ftr-c h4{font-size:.75rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem}
+.ftr-c ul{display:flex;flex-direction:column;gap:.4rem}
+.ftr-c a{font-size:.86rem;color:rgba(245,247,250,.45);transition:color .3s;cursor:pointer}.ftr-c a:hover{color:var(--blue)}
+.ftr-bt{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;font-size:.78rem;color:rgba(245,247,250,.3)}
+.ftr-lg{display:flex;gap:2rem}
+.ftr-lg a{color:rgba(245,247,250,.3);transition:color .3s;cursor:pointer}.ftr-lg a:hover{color:var(--blue)}
+.psvg{stroke-linecap:round;stroke-linejoin:round}
+
+/* Responsive */
+@media(max-width:1024px){.g3,.g4{grid-template-columns:1fr 1fr}.ftr-t{grid-template-columns:1fr 1fr;gap:2rem}.tb{grid-template-columns:140px 1fr}}
+@media(max-width:768px){:root{--hdr:70px}.nav{display:none;position:fixed;top:var(--hdr);left:0;right:0;background:var(--white);flex-direction:column;padding:2rem;border-bottom:1px solid rgba(26,41,62,.06);box-shadow:0 10px 40px rgba(0,0,0,.08)}.nav.open{display:flex}.nav a{color:var(--navy)!important}.mob-tog{display:flex}.g2,.g3,.g4{grid-template-columns:1fr}.g2{gap:3rem}.mgrid{grid-template-columns:1fr 1fr}.mt:not(:last-child)::after{display:none}.ftr-t{grid-template-columns:1fr}.ftr-bt{flex-direction:column;gap:1rem;text-align:center}.hero h1{font-size:clamp(2.2rem,8vw,3.5rem)}.tb{grid-template-columns:1fr}.tb-av{width:100%;height:180px}.fr{grid-template-columns:1fr}.nl-grid{grid-template-columns:1fr;gap:2rem}.nl-form{flex-direction:column}.nl-form button{width:100%}.ticker-label{position:relative;display:inline-flex;padding:.6rem 1rem}.ticker-track{padding-left:0}}
+@media(max-width:480px){.mgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr at-top" id="hdr">
+<div class="hdr-in">
+    <a class="logo" data-nav="home" aria-label="Outwest Energy Home">
+        <svg viewBox="0 0 752.59 420.01" aria-hidden="true">
+            <path d="M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55" fill="#2f87c3"/>
+            <g><text class="logo-txt" transform="translate(.5 320)" fill="#1a293e" font-family="'Jost',sans-serif" font-size="140.78" font-weight="200" letter-spacing=".09em">OUTWEST</text></g>
+            <g><text transform="translate(156.37 402.38)" fill="#2f87c3" font-family="'Jost',sans-serif" font-size="70.22" font-weight="200" letter-spacing=".47em">ENERGY</text></g>
+        </svg>
+    </a>
+    <div class="nav" id="nav">
+        <a data-nav="about">About</a>
+        <a data-nav="investors">Investors</a>
+        <a data-nav="careers">Careers</a>
+        <a data-nav="contact">Contact</a>
+        <a data-nav="news" class="nav-cta">News &amp; Updates</a>
+    </div>
+    <button class="mob-tog" id="mobTog" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<!-- ═══════════ PAGE: HOME ═══════════ -->
+<div class="page active" id="page-home">
+
+<section class="hero">
+<div class="hero-ct">
+    <h1>Experienced Operators. <em>New Energy Venture.</em></h1>
+    <p class="hero-sub">An experienced team acquiring and operating energy assets across Western Canada.</p>
+    <div class="hero-acts">
+        <a data-nav="investors" class="btn btn-p">Investor Overview <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a data-nav="about" class="btn btn-ol">Our Story</a>
+    </div>
+</div>
+<div class="scroll-ind">Scroll</div>
+</section>
+
+<section class="mbar"><div class="ctr"><div class="mgrid">
+    <div class="mt rv"><div class="mt-n">WCSB</div><div class="mt-l">Geographic Focus</div></div>
+    <div class="mt rv rv-d1"><div class="mt-n">Calgary</div><div class="mt-l">Headquartered</div></div>
+    <div class="mt rv rv-d2"><div class="mt-n">Operator-Led</div><div class="mt-l">Structure</div></div>
+    <div class="mt rv rv-d3"><div class="mt-n">Evaluation</div><div class="mt-l">Current Stage</div></div>
+</div></div></section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">Who We Are</div><h2 class="sttl">Who <strong>We Are</strong></h2>
+        <p class="prose">Outwest Energy was founded by a team of energy professionals who've spent their careers building and operating assets across Western Canada.</p>
+        <p class="prose">We bring hands-on experience across the full asset lifecycle — acquisition, development, production, and optimization.</p>
+        <a data-nav="about" class="btn btn-od">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+    <div class="rv rv-d2"><div class="fc">
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div><div><div class="vit">Experience</div><div class="vid">Years of building and operating energy assets across multiple ventures.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><div class="vit">Disciplined Approach</div><div class="vid">Careful evaluation and methodical execution at every stage.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div><div class="vit">Built to Scale</div><div class="vid">Our team, processes, and systems are designed to grow with opportunity.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="vit">Operators First</div><div class="vid">We don't just invest — we build, run, and optimize. Hands-on at every level.</div></div></div>
+    </div></div>
+</div></div>
+</section>
+
+<section class="sec bg-n dark">
+<div class="ctr">
+    <div class="slbl rv">Strategic Focus</div>
+    <h2 class="sttl rv rv-d1">Where We See <strong>Opportunity</strong></h2>
+    <div class="g3" style="margin-top:4rem">
+        <div class="cd-dk rv rv-d1"><div class="ci"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Asset Acquisition</h3><p>Identifying undervalued energy assets with upside potential through operational improvement.</p></div>
+        <div class="cd-dk rv rv-d2"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Operational Excellence</h3><p>Maximizing production and reducing costs through hands-on operational expertise.</p></div>
+        <div class="cd-dk rv rv-d3"><div class="ci"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Emerging Technology</h3><p>Evaluating new tools and applications that improve how assets are managed and operated.</p></div>
+        <div class="cd-dk rv rv-d1"><div class="ci"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Capital Efficiency</h3><p>Disciplined allocation focused on returns, backed by analysis and operational confidence.</p></div>
+        <div class="cd-dk rv rv-d2"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div><h3>Market Intelligence</h3><p>Monitoring deal flow, market dynamics, and regulatory environments for timing.</p></div>
+        <div class="cd-dk rv rv-d3"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Risk Management</h3><p>Practical frameworks that protect downside while preserving upside.</p></div>
+    </div>
+</div>
+</section>
+
+<section class="cta"><div class="ctr">
+    <h2 class="rv">Let's <em>Talk</em></h2>
+    <p class="rv rv-d1">Open to conversations with operators, investors, and partners who share our approach.</p>
+    <div class="bg rv rv-d2">
+        <a data-nav="investors" class="btn btn-p">Investor Information</a>
+        <a data-nav="careers" class="btn btn-ol">Join the Team</a>
+    </div>
+</div></section>
+
+</div>
+
+<!-- ═══════════ PAGE: ABOUT ═══════════ -->
+<div class="page" id="page-about">
+
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> About</div>
+    <h1>Our <em>Story</em></h1>
+    <p class="hero-sub">Years in the field, the boardroom, and at the wellhead — now channeled into something new.</p>
+</div></section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">Our Mission</div><h2 class="sttl">What We <strong>Do</strong></h2>
+        <p class="prose">We identify, acquire, and optimize energy assets that others may overlook — focusing on opportunities where operational knowledge and disciplined capital meet.</p></div>
+    <div class="rv rv-d2"><div class="vis-box"><div class="slbl">Our Vision</div><p>"To build a trusted, operator-led energy company in Western Canada — known for our people, our discipline, and our results."</p></div></div>
+</div></div>
+</section>
+
+<section class="sec bg-m">
+<div class="ctr">
+    <div style="text-align:center;max-width:640px;margin:0 auto 4rem"><div class="slbl rv">Core Principles</div><h2 class="sttl rv rv-d1">What Guides <strong>Our Decisions</strong></h2></div>
+    <div class="g4">
+        <div class="cd rv rv-d1"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Integrity First</h3><p>Transparent, honest dealings with every stakeholder.</p></div>
+        <div class="cd rv rv-d2"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Execution Discipline</h3><p>Methodical, data-driven decision-making.</p></div>
+        <div class="cd rv rv-d3"><div class="ci"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>People-Centric</h3><p>Great operations are built by great teams.</p></div>
+        <div class="cd rv rv-d4"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Long-Term Value</h3><p>Every decision considers sustainable value creation.</p></div>
+    </div>
+</div>
+</section>
+
+<section class="sec bg-w">
+<div class="ctr">
+    <div class="slbl rv">Leadership</div><h2 class="sttl rv rv-d1">The <strong>Team</strong></h2>
+    <p class="ssub rv rv-d2" style="margin-bottom:4rem">Complementary experience across energy operations.</p>
+    <div class="tb rv"><div class="tb-av"><svg viewBox="0 0 24 24" class="psvg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>Chief Executive Officer</h3><span class="trole">CEO &amp; Founder</span><p>20+ years in energy, with experience in E&P leadership, asset acquisition, and team building.</p></div></div>
+    <div class="g2" style="gap:2rem">
+        <div class="tb rv rv-d1"><div class="tb-av"><svg viewBox="0 0 24 24" class="psvg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>VP, Production</h3><span class="trole">Production</span><p>15+ years in production operations. Focused on optimization, artificial lift, and cost management.</p></div></div>
+        <div class="tb rv rv-d2"><div class="tb-av"><svg viewBox="0 0 24 24" class="psvg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>VP, Operations</h3><span class="trole">Operations</span><p>Broad background in field operations, facility management, and day-to-day asset oversight.</p></div></div>
+        <div class="tb rv rv-d1"><div class="tb-av"><svg viewBox="0 0 24 24" class="psvg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>VP, Finance</h3><span class="trole">Finance &amp; Strategy</span><p>Background in energy finance, capital markets, and M&A.</p></div></div>
+        <div class="tb rv rv-d2"><div class="tb-av"><svg viewBox="0 0 24 24" class="psvg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>VP, Engineering</h3><span class="trole">Engineering</span><p>15+ years in drilling and completions. Focused on reducing cycle times and improving recovery.</p></div></div>
+    </div>
+</div>
+</section>
+
+<section class="sec bg-m">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">Our Process</div><h2 class="sttl">Our <strong>Process</strong></h2><p class="prose">Every opportunity goes through a structured evaluation before capital is committed.</p></div>
+    <div class="rv rv-d2"><div class="tl">
+        <div class="tl-i"><div class="tl-dot"></div><h3>Identify &amp; Screen</h3><div class="tl-d">Phase 1</div><p>Leverage deal flow and market intelligence to surface opportunities.</p></div>
+        <div class="tl-i"><div class="tl-dot"></div><h3>Technical Due Diligence</h3><div class="tl-d">Phase 2</div><p>Subsurface evaluation, production analysis, and environmental review.</p></div>
+        <div class="tl-i"><div class="tl-dot"></div><h3>Financial Structuring</h3><div class="tl-d">Phase 3</div><p>Economic modeling and capital structuring for risk-adjusted returns.</p></div>
+        <div class="tl-i"><div class="tl-dot"></div><h3>Execute &amp; Integrate</h3><div class="tl-d">Phase 4</div><p>Transaction execution and operational integration.</p></div>
+        <div class="tl-i"><div class="tl-dot"></div><h3>Optimize &amp; Scale</h3><div class="tl-d">Phase 5</div><p>Continuous improvement through data-driven operations.</p></div>
+    </div></div>
+</div></div>
+</section>
+
+<section class="cta"><div class="ctr">
+    <h2 class="rv">Get in <em>Touch</em></h2>
+    <p class="rv rv-d1">Whether you're an investor, operator, or potential partner — we'd like to hear from you.</p>
+    <div class="bg rv rv-d2"><a data-nav="contact" class="btn btn-p">Contact Us</a><a data-nav="investors" class="btn btn-ol">Investor Overview</a></div>
+</div></section>
+
+</div>
+
+<!-- ═══════════ PAGE: INVESTORS ═══════════ -->
+<div class="page" id="page-investors">
+
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> Investors</div>
+    <h1>Investor <em>Overview</em></h1>
+    <p class="hero-sub">An operator-led energy platform focused on the Western Canadian Sedimentary Basin.</p>
+</div></section>
+
+<section class="mbar dark"><div class="ctr"><div class="mgrid">
+    <div class="mt rv"><div class="mt-n">WCSB</div><div class="mt-l">Geographic Focus</div></div>
+    <div class="mt rv rv-d1"><div class="mt-n">Operator-Led</div><div class="mt-l">Structure</div></div>
+    <div class="mt rv rv-d2"><div class="mt-n">Calgary</div><div class="mt-l">Headquartered</div></div>
+    <div class="mt rv rv-d3"><div class="mt-n">Evaluation</div><div class="mt-l">Current Stage</div></div>
+</div></div></section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">Investment Thesis</div><h2 class="sttl">Our <strong>Thesis</strong></h2>
+        <p class="prose">The WCSB offers meaningful opportunities created by consolidation dynamics and capital reallocation from smaller operators.</p>
+        <p class="prose">We're operators first. Value comes through hands-on improvement, not commodity price speculation.</p></div>
+    <div class="rv rv-d2"><div class="fc">
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><div class="vit">Operational Value Creation</div><div class="vid">Returns driven by improvement, not speculation.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="vit">Structured Evaluation</div><div class="vid">Multi-phase due diligence on every opportunity.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><div class="vit">Aligned Interests</div><div class="vid">Management invests personal capital alongside investors.</div></div></div>
+        <div class="vi"><div class="vic"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div><div class="vit">Scalable Platform</div><div class="vid">Infrastructure for integrating multiple acquisitions.</div></div></div>
+    </div></div>
+</div></div>
+</section>
+
+<section class="sec bg-n dark">
+<div class="ctr">
+    <div style="text-align:center;max-width:640px;margin:0 auto 4rem"><div class="slbl rv">Acquisition Criteria</div><h2 class="sttl rv rv-d1">What We <strong>Look For</strong></h2></div>
+    <div class="g3">
+        <div class="cd-dk rv rv-d1"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div><h3>Producing Assets</h3><p>Established production with identifiable upside through optimization.</p></div>
+        <div class="cd-dk rv rv-d2"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Undervalued Potential</h3><p>Assets not fully realized due to capital constraints.</p></div>
+        <div class="cd-dk rv rv-d3"><div class="ci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Western Canada</h3><p>Alberta and northeastern BC where our networks run deepest.</p></div>
+        <div class="cd-dk rv rv-d1"><div class="ci"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Capital Efficient</h3><p>Reasonable returns with clear paths to cash flow.</p></div>
+        <div class="cd-dk rv rv-d2"><div class="ci"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>Clean Liabilities</h3><p>Manageable environmental profiles with clear compliance paths.</p></div>
+        <div class="cd-dk rv rv-d3"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Scalable Additions</h3><p>Assets that integrate into our platform with synergies.</p></div>
+    </div>
+</div>
+</section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">Governance</div><h2 class="sttl">Transparency &amp; <strong>Accountability</strong></h2><p class="prose">Investors deserve clear visibility into capital deployment.</p></div>
+    <div class="rv rv-d2"><div class="g2" style="gap:1rem">
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><h3>Quarterly Reports</h3><p>Financial and operational performance.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><h3>Advisory Board</h3><p>Independent strategic oversight.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><h3>Performance KPIs</h3><p>Operational dashboards for investors.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Audited Financials</h3><p>Annual independent audit.</p></div>
+    </div></div>
+</div></div>
+</section>
+
+<section class="sec bg-m">
+<div class="ctr-sm">
+    <div style="text-align:center;margin-bottom:4rem"><div class="slbl rv">FAQ</div><h2 class="sttl rv rv-d1">Frequently Asked <strong>Questions</strong></h2></div>
+    <div class="rv rv-d2">
+        <div class="acc-i open"><button class="acc-t">What stage is Outwest Energy currently at? <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="acc-c"><div class="acc-b"><p>We've assembled our core team, established operations, and are actively evaluating acquisition opportunities in the WCSB.</p></div></div></div>
+        <div class="acc-i"><button class="acc-t">How does Outwest align management and investor interests? <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="acc-c"><div class="acc-b"><p>Leadership invests personal capital alongside investors. Compensation is tied to long-term value creation.</p></div></div></div>
+        <div class="acc-i"><button class="acc-t">What is the geographic focus? <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="acc-c"><div class="acc-b"><p>Primarily the Western Canadian Sedimentary Basin — Alberta and northeastern BC.</p></div></div></div>
+        <div class="acc-i"><button class="acc-t">What reporting will investors receive? <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="acc-c"><div class="acc-b"><p>Quarterly reports, annual audited statements, production dashboards, and periodic investor calls.</p></div></div></div>
+    </div>
+</div>
+</section>
+
+<section class="cta"><div class="ctr">
+    <h2 class="rv">Interested in <em>Learning More?</em></h2>
+    <p class="rv rv-d1">We welcome conversations with capital partners who share our operator-first approach.</p>
+    <div class="bg rv rv-d2"><a data-nav="contact" class="btn btn-p">Schedule a Discussion</a><a data-nav="about" class="btn btn-ol">Meet the Team</a></div>
+</div></section>
+
+</div>
+
+<!-- ═══════════ PAGE: CAREERS ═══════════ -->
+<div class="page" id="page-careers">
+
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> Careers</div>
+    <h1><em>Careers</em></h1>
+    <p class="hero-sub">We're early-stage and building carefully. The right people matter more than headcount.</p>
+</div></section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2">
+    <div class="rv"><div class="slbl">How We Work</div><h2 class="sttl">Small Team. <strong>Real Work.</strong></h2>
+        <p class="prose">We're a small group of operators who prefer to do things well rather than do things loudly. Everyone contributes directly.</p>
+        <p class="prose">We value honesty, quiet competence, and people who care about the details.</p></div>
+    <div class="rv rv-d2"><div class="g2" style="gap:1rem">
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><h3>Small &amp; Focused</h3><p>Real responsibility and impact.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg><h3>Ownership</h3><p>Equity participation for all.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><h3>Growth</h3><p>Grow with the company.</p></div>
+        <div class="mcd"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><h3>Calgary</h3><p>Canada's energy capital.</p></div>
+    </div></div>
+</div></div>
+</section>
+
+<section class="sec bg-m">
+<div class="ctr-sm" style="text-align:center">
+    <div class="slbl rv">Get in Touch</div>
+    <h2 class="sttl rv rv-d1">No Open Positions <strong>Right Now</strong></h2>
+    <p class="ssub rv rv-d2" style="margin:0 auto 3rem;text-align:center">We're not actively hiring, but we're always open to meeting good people. Send us a note — we'll keep it on file.</p>
+    <a data-nav="contact" class="btn btn-p rv rv-d3">Reach Out <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+</section>
+
+</div>
+
+<!-- ═══════════ PAGE: NEWS ═══════════ -->
+<div class="page" id="page-news">
+
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> News</div>
+    <h1>News &amp; <em>Updates</em></h1>
+    <p class="hero-sub">Company milestones and industry news from the Western Canadian energy sector.</p>
+</div></section>
+
+<!-- Scrolling Ticker -->
+<div class="ticker-wrap" id="tickerWrap">
+    <div class="ticker-label"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> LIVE</div>
+    <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-empty">Loading latest headlines...</div>
+    </div>
+</div>
+
+<!-- Company Updates -->
+<section class="sec bg-m">
+<div class="ctr">
+    <div class="slbl rv">Company</div>
+    <h2 class="sttl rv rv-d1">Outwest <strong>Updates</strong></h2>
+    <div class="g3" style="margin-top:2rem">
+        <div class="news-item rv rv-d1"><div class="news-date">February 2026</div><h3>Website Launch</h3><p>Outwest Energy's website is now live. We'll share company updates, milestones, and industry perspectives here as we grow.</p></div>
+        <div class="news-item rv rv-d2"><div class="news-date">January 2026</div><h3>Office Established</h3><p>Our Calgary office is operational. The team is actively evaluating acquisition opportunities across the WCSB.</p></div>
+        <div class="news-item rv rv-d3"><div class="news-date">Q4 2025</div><h3>Company Founded</h3><p>Outwest Energy Inc. was incorporated with a mandate to acquire and operate energy assets in Western Canada.</p></div>
+    </div>
+</div>
+</section>
+
+<!-- Industry Feed -->
+<section class="sec bg-w">
+<div class="ctr">
+    <div class="slbl rv">Industry</div>
+    <h2 class="sttl rv rv-d1">Energy Sector <strong>Headlines</strong></h2>
+    <p class="ssub rv rv-d2" style="margin-bottom:2rem">Live feed from Canadian and global energy news sources.</p>
+    <div class="feed-tabs rv rv-d3">
+        <button class="feed-tab active" data-feed="canadian-energy">Canadian Energy</button>
+        <button class="feed-tab" data-feed="wcsb-alberta">WCSB &amp; Alberta</button>
+        <button class="feed-tab" data-feed="deals">M&amp;A &amp; Deals</button>
+        <button class="feed-tab" data-feed="commodity">Commodity Prices</button>
+    </div>
+    <div id="newsFeed">
+        <div class="feed-loading"><div class="spinner"></div><p>Loading industry headlines...</p></div>
+    </div>
+</div>
+</section>
+
+<!-- Newsletter -->
+<section class="nl-sec">
+<div class="ctr"><div class="nl-grid">
+    <div class="rv">
+        <h2>Stay Informed on <em>Western Canadian Energy</em></h2>
+        <p>Periodic updates on company milestones, acquisition activity, and industry perspectives — straight to your inbox. No spam, unsubscribe anytime.</p>
+    </div>
+    <div class="rv rv-d2">
+        <form id="nlForm" novalidate>
+            <div class="nl-form">
+                <input type="email" id="nlEmail" placeholder="you@company.com" required>
+                <button type="submit">Subscribe</button>
+            </div>
+            <div class="nl-note">By subscribing, you agree to our <a data-nav="privacy">Privacy Policy</a>.</div>
+            <div class="nl-ok" id="nlOk">✓ You're subscribed. We'll be in touch.</div>
+        </form>
+    </div>
+</div></div>
+</section>
+
+<section class="cta"><div class="ctr">
+    <h2 class="rv">Stay <em>Connected</em></h2>
+    <p class="rv rv-d1">For investor updates or general inquiries, get in touch with our team.</p>
+    <div class="bg rv rv-d2"><a data-nav="contact" class="btn btn-p">Contact Us</a><a data-nav="investors" class="btn btn-ol">Investor Overview</a></div>
+</div></section>
+
+</div>
+
+<!-- ═══════════ PAGE: CONTACT ═══════════ -->
+<div class="page" id="page-contact">
+
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> Contact</div>
+    <h1>Contact <em>Us</em></h1>
+    <p class="hero-sub">Whether you're an operator, investor, potential team member, or service provider — we're happy to hear from you.</p>
+</div></section>
+
+<section class="sec bg-w">
+<div class="ctr"><div class="g2" style="gap:6rem">
+    <div class="rv">
+        <div class="slbl">Reach Out</div>
+        <h2 class="sttl" style="margin-bottom:1rem">Get In <strong>Touch</strong></h2>
+        <p class="prose" style="margin-bottom:4rem">Every inquiry gets a personal response from a member of our team.</p>
+        <div style="margin-bottom:4rem">
+            <div class="ct-i"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><div style="font-weight:500;color:var(--navy)">Office</div><div style="color:rgba(35,35,35,.6);font-size:.9rem">Calgary, Alberta, Canada</div></div></div>
+            <div class="ct-i"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><div style="font-weight:500;color:var(--navy)">Email</div><div style="font-size:.9rem"><a href="mailto:info@outwestenergy.com" style="color:var(--blue)">info@outwestenergy.com</a></div></div></div>
+            <div class="ct-i"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><div><div style="font-weight:500;color:var(--navy)">LinkedIn</div><div style="color:var(--blue);font-size:.9rem">Follow Outwest Energy</div></div></div>
+        </div>
+        <div class="ct-box">
+            <h3 style="font-size:.95rem;font-weight:500;color:var(--navy);margin-bottom:1rem">Looking for Something Specific?</h3>
+            <a data-nav="investors" class="ct-link"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Investor information &amp; FAQ</a>
+            <a data-nav="careers" class="ct-link"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Careers &amp; team culture</a>
+            <a data-nav="about" class="ct-link"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Meet our leadership team</a>
+        </div>
+    </div>
+    <div class="rv rv-d2">
+        <div class="fcard">
+            <h3 style="font-size:1.15rem;font-weight:400;color:var(--navy);margin-bottom:2rem">Send Us a Message</h3>
+            <form id="contactForm" novalidate>
+                <div class="fr"><div class="fg"><label>First Name *</label><input type="text" required placeholder="First name"></div><div class="fg"><label>Last Name *</label><input type="text" required placeholder="Last name"></div></div>
+                <div class="fr"><div class="fg"><label>Email *</label><input type="email" required placeholder="you@company.com"></div><div class="fg"><label>Phone</label><input type="tel" placeholder="(403) 555-0123"></div></div>
+                <div class="fg"><label>Company</label><input type="text" placeholder="Your company name"></div>
+                <div class="fg"><label>Inquiry Type *</label><select required><option value="" disabled selected>Select an option</option><option>Partnership Opportunity</option><option>Investment Inquiry</option><option>Asset / Deal Opportunity</option><option>Service Provider</option><option>Career Inquiry</option><option>Media / Press</option><option>General Question</option></select></div>
+                <div class="fg"><label>Message *</label><textarea required placeholder="Tell us how we can help..."></textarea></div>
+                <div class="fg" style="margin-bottom:2rem"><label style="display:flex;align-items:flex-start;gap:.5rem;cursor:pointer;text-transform:none;letter-spacing:normal;font-weight:300;font-size:.85rem;color:rgba(35,35,35,.6)"><input type="checkbox" style="width:auto;margin-top:3px"> I agree to Outwest Energy's <a data-nav="privacy" style="color:var(--blue);text-decoration:underline;cursor:pointer">Privacy Policy</a></label></div>
+                <button type="submit" class="btn btn-p btn-blk">Send Message <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+            </form>
+        </div>
+    </div>
+</div></div>
+</section>
+
+</div>
+
+<!-- ═══════════ PAGE: PRIVACY ═══════════ -->
+<div class="page" id="page-privacy">
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> Privacy Policy</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p class="hero-sub">How we collect, use, and protect your information.</p>
+</div></section>
+<section class="sec bg-w"><div class="ctr-xs legal">
+    <div class="legal-date">Last Updated: February 2026</div>
+    <p>Outwest Energy Inc. is committed to protecting your personal information in accordance with PIPEDA and applicable Canadian privacy legislation.</p>
+    <h3>1. Information We Collect</h3><p>Personal identification information submitted through contact forms; professional information in applications; technical data (IP, browser type); and communication records.</p>
+    <h3>2. How We Use It</h3><p>To respond to inquiries, evaluate partnerships, process applications, improve our website, comply with legal obligations, and send relevant updates where opted in.</p>
+    <h3>3. Sharing</h3><p>We do not sell your information. We may share with trusted service providers, professional advisors, when required by law, or in connection with a corporate transaction.</p>
+    <h3>4. Security &amp; Retention</h3><p>We implement appropriate measures to protect your information. Contact inquiries retained two years; applications one year; investor communications for the relationship duration.</p>
+    <h3>5. Your Rights</h3><p>Access, correct, withdraw consent, request deletion, or file a complaint with the Privacy Commissioner. Contact: <a href="mailto:privacy@outwestenergy.com" style="color:var(--blue)">privacy@outwestenergy.com</a></p>
+    <h3>6. Contact</h3><p><strong>Outwest Energy Inc.</strong> — Privacy Officer — Calgary, Alberta — <a href="mailto:privacy@outwestenergy.com" style="color:var(--blue)">privacy@outwestenergy.com</a></p>
+</div></section>
+</div>
+
+<!-- ═══════════ PAGE: TERMS ═══════════ -->
+<div class="page" id="page-terms">
+<section class="pg-hero"><div class="ctr">
+    <div class="bc"><a data-nav="home">Home</a> <i>/</i> Terms of Use</div>
+    <h1>Terms of <em>Use</em></h1>
+    <p class="hero-sub">The terms governing your use of the Outwest Energy website.</p>
+</div></section>
+<section class="sec bg-w"><div class="ctr-xs legal">
+    <div class="legal-date">Last Updated: February 2026</div>
+    <p>By accessing this website you agree to these terms. If you do not agree, discontinue use immediately.</p>
+    <h3>1. Use of Website</h3><p>Provided for informational purposes. Personal, non-commercial use only. No unlawful use, interference, unauthorized access, or automated scraping.</p>
+    <h3>2. Intellectual Property</h3><p>All content is property of Outwest Energy Inc., protected by Canadian and international law.</p>
+    <h3>3. No Investment Advice</h3><p>Nothing constitutes an offer, solicitation, or recommendation. Consult your own advisors.</p>
+    <h3>4. Limitation of Liability</h3><p>To the maximum extent permitted by law, Outwest Energy shall not be liable for damages arising from use of this website.</p>
+    <h3>5. Governing Law</h3><p>Laws of Alberta and federal laws of Canada. Exclusive jurisdiction of courts in Calgary.</p>
+    <h3>6. Contact</h3><p><strong>Outwest Energy Inc.</strong> — Legal — Calgary, Alberta — <a href="mailto:legal@outwestenergy.com" style="color:var(--blue)">legal@outwestenergy.com</a></p>
+</div></section>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="ftr">
+<div class="ctr">
+    <div class="ftr-t">
+        <div class="ftr-b">
+            <svg viewBox="0 0 752.59 420.01" height="48" aria-hidden="true">
+                <path d="M408.94,79.85c4.35,11.34,37.94,48.6,38.51,59.43.32,6.04-12.78,30.12-14.46,30.12h-112.47l66.51-83.05h-12.78l27.58-28.23-33.94-44.8-70.35,121.63-29.47-24.35c-9.03,5.47-52.22,58.79-56.29,58.79h-54.68l96.65-105.78,32.53,24.82L370.16,0l53.11,53.38,15.56-14.87,36.08,46.19,16.64-15.28,103.95,99.98h-72.64l-93.5-98.62h-11.55" fill="#2f87c3"/>
+                <g><text transform="translate(.5 320)" fill="#F5F7FA" font-family="'Jost',sans-serif" font-size="140.78" font-weight="200" letter-spacing=".09em">OUTWEST</text></g>
+                <g><text transform="translate(156.37 402.38)" fill="#2f87c3" font-family="'Jost',sans-serif" font-size="70.22" font-weight="200" letter-spacing=".47em">ENERGY</text></g>
+            </svg>
+            <p>Operator-led energy company focused on Western Canada.</p>
+        </div>
+        <div class="ftr-c"><h4>Company</h4><ul><li><a data-nav="about">About</a></li><li><a data-nav="investors">Investors</a></li><li><a data-nav="careers">Careers</a></li><li><a data-nav="news">News &amp; Updates</a></li></ul></div>
+        <div class="ftr-c"><h4>Get in Touch</h4><ul><li><a data-nav="contact">Contact Us</a></li><li><a href="mailto:info@outwestenergy.com">info@outwestenergy.com</a></li><li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+        <div class="ftr-c"><h4>Location</h4><ul><li>Calgary, Alberta</li><li>Canada</li></ul></div>
+    </div>
+    <div class="ftr-bt">
+        <span>&copy; 2026 Outwest Energy Inc. All rights reserved.</span>
+        <div class="ftr-lg"><a data-nav="privacy">Privacy Policy</a><a data-nav="terms">Terms of Use</a></div>
+    </div>
+</div>
+</footer>
+
+<script>
+(function(){
+    var hdr=document.getElementById('hdr'),nav=document.getElementById('nav'),tog=document.getElementById('mobTog');
+    var pages=document.querySelectorAll('.page');
+    var navLinks=nav.querySelectorAll('a:not(.nav-cta)');
+    var currentPage='home';
+    var feedCache={};
+    var tickerLoaded=false;
+
+    /* ═══ FEED CONFIGURATION ═══ */
+    var FEEDS={
+        'canadian-energy':{
+            sources:[
+                {type:'rss',url:'https://boereport.com/feed/',name:'BOE Report'},
+                {type:'gnews',q:'Canada+oil+gas+energy+production'}
+            ]
+        },
+        'wcsb-alberta':{
+            sources:[
+                {type:'gnews',q:'Alberta+WCSB+oil+gas+production+drilling'},
+                {type:'rss',url:'https://www.jwnenergy.com/feed/',name:'JWN Energy'}
+            ]
+        },
+        'deals':{
+            sources:[
+                {type:'gnews',q:'oil+gas+acquisition+M%26A+Canada+energy+deal'}
+            ]
+        },
+        'commodity':{
+            sources:[
+                {type:'gnews',q:'WTI+crude+oil+price+WCS+natural+gas+Canada'}
+            ]
+        }
+    };
+
+    /* ═══ RSS FETCHING — multi-strategy with fallback ═══ */
+
+    /* Strategy 1: rss2json.com */
+    function fetchViaRss2Json(rssUrl,count){
+        count=count||12;
+        var api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(rssUrl)+'&count='+count;
+        return fetch(api,{signal:AbortSignal.timeout(8000)})
+            .then(function(r){return r.json()})
+            .then(function(d){
+                if(d.status==='ok'&&d.items&&d.items.length)return d.items.map(normalizeR2J);
+                return [];
+            });
+    }
+
+    /* Strategy 2: allorigins CORS proxy + XML parse */
+    function fetchViaProxy(rssUrl,count){
+        count=count||12;
+        var proxy='https://api.allorigins.win/raw?url='+encodeURIComponent(rssUrl);
+        return fetch(proxy,{signal:AbortSignal.timeout(10000)})
+            .then(function(r){return r.text()})
+            .then(function(xml){return parseRSSXml(xml,count)});
+    }
+
+    /* Strategy 3: corsproxy.io fallback */
+    function fetchViaCorsProxy(rssUrl,count){
+        count=count||12;
+        var proxy='https://corsproxy.io/?'+encodeURIComponent(rssUrl);
+        return fetch(proxy,{signal:AbortSignal.timeout(10000)})
+            .then(function(r){return r.text()})
+            .then(function(xml){return parseRSSXml(xml,count)});
+    }
+
+    /* Parse RSS XML into items array */
+    function parseRSSXml(xml,count){
+        try{
+            var parser=new DOMParser();
+            var doc=parser.parseFromString(xml,'text/xml');
+            if(doc.querySelector('parsererror'))return [];
+            var entries=doc.querySelectorAll('item');
+            if(!entries.length)entries=doc.querySelectorAll('entry'); /* Atom */
+            var items=[];
+            for(var i=0;i<Math.min(entries.length,count);i++){
+                var el=entries[i];
+                var title=getTag(el,'title');
+                var link=getTag(el,'link')||getAttr(el,'link','href');
+                var pubDate=getTag(el,'pubDate')||getTag(el,'published')||getTag(el,'updated');
+                var desc=getTag(el,'description')||getTag(el,'summary')||getTag(el,'content');
+                var source=getTag(el,'source')||getAttr(el,'source','url')||'';
+                items.push({title:title,link:link,pubDate:pubDate,description:desc,source:source});
+            }
+            return items;
+        }catch(e){return [];}
+    }
+    function getTag(el,tag){var n=el.querySelector(tag);return n?n.textContent.trim():'';}
+    function getAttr(el,tag,attr){var n=el.querySelector(tag);return n?n.getAttribute(attr)||'':'';}
+
+    /* Normalize rss2json item */
+    function normalizeR2J(item){
+        return{
+            title:item.title||'',
+            link:item.link||'',
+            pubDate:item.pubDate||'',
+            description:item.description||item.content||'',
+            source:item.author||''
+        };
+    }
+
+    /* Master fetch — try all strategies in sequence */
+    function fetchRSS(rssUrl,count){
+        return fetchViaRss2Json(rssUrl,count)
+            .catch(function(){return [];})
+            .then(function(items){
+                if(items.length)return items;
+                return fetchViaProxy(rssUrl,count).catch(function(){return [];});
+            })
+            .then(function(items){
+                if(items.length)return items;
+                return fetchViaCorsProxy(rssUrl,count).catch(function(){return [];});
+            });
+    }
+
+    /* Build Google News RSS URL */
+    function gnewsUrl(q){
+        return 'https://news.google.com/rss/search?q='+q+'&hl=en-CA&gl=CA&ceid=CA:en';
+    }
+
+    /* Fetch a feed category — tries all configured sources, merges & deduplicates */
+    function fetchFeedCategory(key,count){
+        var config=FEEDS[key];
+        if(!config)return Promise.resolve([]);
+        count=count||9;
+        var promises=config.sources.map(function(src){
+            var url=src.type==='gnews'?gnewsUrl(src.q):src.url;
+            return fetchRSS(url,count).then(function(items){
+                /* Tag with source name for gnews extraction */
+                if(src.name)items.forEach(function(it){if(!it.source)it.source=src.name;});
+                return items;
+            }).catch(function(){return [];});
+        });
+        return Promise.all(promises).then(function(results){
+            /* Flatten and deduplicate by title */
+            var all=[],seen={};
+            results.forEach(function(items){
+                items.forEach(function(item){
+                    var key=cleanTitle(item.title).toLowerCase().substring(0,60);
+                    if(!seen[key]&&item.title){seen[key]=true;all.push(item);}
+                });
+            });
+            /* Sort by date descending */
+            all.sort(function(a,b){return new Date(b.pubDate)-new Date(a.pubDate);});
+            return all.slice(0,count);
+        });
+    }
+
+    /* ═══ DISPLAY HELPERS ═══ */
+
+    function cleanTitle(t){
+        if(!t)return '';
+        return t.replace(/\s+-\s+[^-]+$/,'').replace(/<[^>]*>/g,'').trim();
+    }
+    function extractSource(item){
+        var s=item.source||item.author||'';
+        if(!s&&item.title){var m=item.title.match(/\s-\s([^-]+)$/);if(m)s=m[1].trim();}
+        return s.replace(/<[^>]*>/g,'').trim();
+    }
+    function cleanDesc(d){
+        if(!d)return '';
+        d=d.replace(/<[^>]*>/g,'').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
+        if(d.length>180)d=d.substring(0,177)+'...';
+        return d;
+    }
+    function fmtDate(d){
+        if(!d)return '';
+        try{var dt=new Date(d);if(isNaN(dt))return '';return dt.toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'});}catch(e){return '';}
+    }
+
+    /* ═══ LOAD FEED INTO GRID ═══ */
+
+    function loadFeed(feedKey){
+        var container=document.getElementById('newsFeed');
+        if(!container)return;
+        container.innerHTML='<div class="feed-loading"><div class="spinner"></div><p>Loading industry headlines...</p></div>';
+
+        if(feedCache[feedKey]){
+            renderFeed(feedCache[feedKey],container);
+            return;
+        }
+
+        fetchFeedCategory(feedKey,9).then(function(items){
+            if(items.length){
+                feedCache[feedKey]=items;
+                renderFeed(items,container);
+            }else{
+                container.innerHTML='<div style="text-align:center;padding:4rem 0"><p style="color:rgba(35,35,35,.5);margin-bottom:1.5rem">Unable to load headlines at this time.</p><p style="font-size:.9rem;color:rgba(35,35,35,.4)">Visit <a href="https://boereport.com" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">BOE Report</a>, <a href="https://www.jwnenergy.com" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">JWN Energy</a>, or <a href="https://financialpost.com/commodities/energy" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">Financial Post</a> for the latest.</p></div>';
+            }
+        });
+    }
+
+    function renderFeed(items,container){
+        var html='<div class="g3">';
+        items.forEach(function(item){
+            var date=fmtDate(item.pubDate);
+            var desc=cleanDesc(item.description);
+            var source=extractSource(item);
+            var title=cleanTitle(item.title);
+            if(!title)return;
+            html+='<div class="news-item rv vis">';
+            if(date)html+='<div class="news-date">'+date+'</div>';
+            html+='<h3>'+title+'</h3>';
+            if(desc)html+='<p>'+desc+'</p>';
+            if(source)html+='<div class="news-src">'+source+'</div>';
+            if(item.link)html+='<a href="'+item.link+'" target="_blank" rel="noopener noreferrer" class="news-link">Read Article <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>';
+            html+='</div>';
+        });
+        html+='</div>';
+        container.innerHTML=html;
+    }
+
+    /* ═══ SCROLLING TICKER ═══ */
+
+    function loadTicker(){
+        if(tickerLoaded)return;
+        var track=document.getElementById('tickerTrack');
+        if(!track)return;
+
+        /* Fetch from multiple sources for ticker */
+        var tickerFeeds=[
+            fetchRSS('https://boereport.com/feed/',15),
+            fetchRSS(gnewsUrl('Canada+oil+gas+energy+Alberta'),10)
+        ];
+
+        Promise.all(tickerFeeds.map(function(p){return p.catch(function(){return [];})}))
+        .then(function(results){
+            var all=[],seen={};
+            results.forEach(function(items){
+                items.forEach(function(item){
+                    var k=cleanTitle(item.title).toLowerCase().substring(0,50);
+                    if(!seen[k]&&item.title){seen[k]=true;all.push(item);}
+                });
+            });
+
+            /* Filter to last 24 hours, fallback to latest */
+            var now=Date.now(),day=24*60*60*1000;
+            var recent=all.filter(function(item){
+                var pub=new Date(item.pubDate).getTime();
+                return pub&&(now-pub)<day;
+            });
+            if(!recent.length)recent=all.slice(0,15);
+            if(!recent.length){
+                track.innerHTML='<div class="ticker-empty">No recent headlines available.</div>';
+                return;
+            }
+
+            /* Sort newest first */
+            recent.sort(function(a,b){return new Date(b.pubDate)-new Date(a.pubDate);});
+            recent=recent.slice(0,20);
+
+            var html='';
+            recent.forEach(function(item){
+                var src=extractSource(item);
+                var title=cleanTitle(item.title);
+                if(!title)return;
+                html+='<div class="ticker-item"><div class="ticker-dot"></div>';
+                html+='<a href="'+(item.link||'#')+'" target="_blank" rel="noopener noreferrer">';
+                html+=title;
+                if(src)html+='<span class="ticker-src">'+src+'</span>';
+                html+='</a></div>';
+            });
+
+            /* Duplicate for seamless scroll loop */
+            track.innerHTML=html+html;
+            var speed=Math.max(40,recent.length*4);
+            track.style.setProperty('--ticker-duration',speed+'s');
+            tickerLoaded=true;
+        });
+    }
+
+    /* ═══ ROUTER ═══ */
+
+    function navigate(page){
+        if(!page||page===currentPage)return;
+        pages.forEach(function(p){p.classList.remove('active')});
+        var target=document.getElementById('page-'+page);
+        if(!target){target=document.getElementById('page-home');page='home';}
+        target.classList.add('active');
+        currentPage=page;
+        window.scrollTo({top:0,behavior:'instant'});
+
+        navLinks.forEach(function(a){a.classList.toggle('act',a.getAttribute('data-nav')===page)});
+
+        var isHome=page==='home';
+        if(isHome&&window.scrollY<=80){hdr.classList.add('at-top');hdr.classList.remove('scrolled')}
+        else{hdr.classList.remove('at-top');hdr.classList.add('scrolled')}
+
+        var titles={home:'Outwest Energy — Experienced Operators. New Energy Venture.',about:'About — Outwest Energy',investors:'Investors — Outwest Energy',careers:'Careers — Outwest Energy',news:'News & Updates — Outwest Energy',contact:'Contact — Outwest Energy',privacy:'Privacy Policy — Outwest Energy',terms:'Terms of Use — Outwest Energy'};
+        document.title=titles[page]||titles.home;
+        history.pushState(null,null,page==='home'?'#':'#'+page);
+
+        /* Re-trigger reveal animations */
+        setTimeout(function(){
+            var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('vis')})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+            target.querySelectorAll('.rv').forEach(function(el){el.classList.remove('vis');obs.observe(el)});
+        },50);
+
+        /* Load feeds on news page */
+        if(page==='news'){
+            if(!feedCache['canadian-energy'])loadFeed('canadian-energy');
+            loadTicker();
+        }
+    }
+
+    /* ═══ EVENT HANDLERS ═══ */
+
+    /* data-nav click */
+    document.addEventListener('click',function(e){
+        var link=e.target.closest('[data-nav]');
+        if(!link)return;
+        e.preventDefault();
+        tog.classList.remove('on');nav.classList.remove('open');
+        navigate(link.getAttribute('data-nav'));
+    });
+
+    /* Hash routing */
+    function onHash(){var h=location.hash.replace('#','');navigate(h||'home')}
+    window.addEventListener('hashchange',onHash);
+    window.addEventListener('popstate',onHash);
+
+    /* Header scroll */
+    function updateHeader(){
+        if(currentPage==='home'&&window.scrollY<=80){hdr.classList.add('at-top');hdr.classList.remove('scrolled')}
+        else{hdr.classList.remove('at-top');hdr.classList.add('scrolled')}
+    }
+    window.addEventListener('scroll',updateHeader,{passive:true});
+
+    /* Mobile toggle */
+    tog.addEventListener('click',function(){tog.classList.toggle('on');nav.classList.toggle('open')});
+
+    /* Accordion */
+    document.addEventListener('click',function(e){var t=e.target.closest('.acc-t');if(!t)return;var i=t.closest('.acc-i'),w=i.classList.contains('open');i.parentElement.querySelectorAll('.acc-i').forEach(function(x){x.classList.remove('open')});if(!w)i.classList.add('open')});
+
+    /* Contact form */
+    var form=document.getElementById('contactForm');
+    if(form)form.addEventListener('submit',function(e){e.preventDefault();var b=form.querySelector('button[type="submit"]');b.innerHTML='Message Sent \u2713';b.style.background='#27ae60';b.disabled=true;setTimeout(function(){form.reset();b.innerHTML='Send Message';b.style.background='';b.disabled=false},3000)});
+
+    /* Newsletter form */
+    var nlForm=document.getElementById('nlForm');
+    if(nlForm)nlForm.addEventListener('submit',function(e){
+        e.preventDefault();
+        var email=document.getElementById('nlEmail');
+        var ok=document.getElementById('nlOk');
+        if(!email.value||!email.value.includes('@'))return;
+        nlForm.querySelector('button').disabled=true;
+        nlForm.querySelector('button').textContent='Subscribing...';
+        setTimeout(function(){
+            nlForm.querySelector('.nl-form').style.display='none';
+            nlForm.querySelector('.nl-note').style.display='none';
+            ok.classList.add('show');
+        },800);
+    });
+
+    /* Feed tabs */
+    document.addEventListener('click',function(e){
+        var tab=e.target.closest('.feed-tab');
+        if(!tab)return;
+        document.querySelectorAll('.feed-tab').forEach(function(t){t.classList.remove('active')});
+        tab.classList.add('active');
+        loadFeed(tab.getAttribute('data-feed'));
+    });
+
+    /* Initial scroll reveal for home */
+    var ro=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('vis')})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+    document.querySelectorAll('.page.active .rv').forEach(function(el){ro.observe(el)});
+
+    /* Init from hash */
+    onHash();
+})();
+</script>
+</body>
+</html>
