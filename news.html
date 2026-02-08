@@ -12,18 +12,28 @@
 <link rel="stylesheet" href="css/styles.css">
 
 <style>
-.cm-card{background:#fff;border:1px solid rgba(35,35,35,.08);border-radius:12px;padding:1.4rem;text-align:center;transition:transform .3s ease,box-shadow .3s ease}
-.cm-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
-.cm-icon{width:44px;height:44px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto .8rem;color:#fff}
-.cm-label{font-size:.73rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:.3rem}
-.cm-price{font-size:1.8rem;font-weight:300;color:var(--navy);line-height:1.2;font-family:var(--font)}
-.cm-unit{font-size:.7rem;color:rgba(35,35,35,.45);margin-top:.15rem;letter-spacing:.04em}
-.cm-change{font-size:.78rem;font-weight:500;margin-top:.5rem;padding:.2rem .6rem;border-radius:20px;display:inline-block}
+.pg-hero .ctr{text-align:center}
+.pg-hero .bc{justify-content:center}
+.logo-mark{height:38px!important;width:auto!important;margin-right:10px}
+.logo-sub{letter-spacing:.38em}
+.ticker-wrap{overflow:hidden;-webkit-overflow-scrolling:touch}
+.ticker-track{display:flex;animation:tickScroll 45s linear infinite;will-change:transform;gap:3rem}
+.ticker-track:hover{animation-play-state:paused}
+@keyframes tickScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:768px){.ticker-track{animation-duration:30s;gap:2rem}}
+.cm-card{background:#fff;border:1px solid rgba(35,35,35,.08);border-radius:10px;padding:1rem;text-align:center;transition:transform .3s,box-shadow .3s}
+.cm-card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,.07)}
+.cm-icon{width:36px;height:36px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto .5rem;color:#fff}
+.cm-icon svg{width:16px;height:16px}
+.cm-label{font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:.2rem}
+.cm-price{font-size:1.25rem;font-weight:300;color:var(--navy);line-height:1.2;font-family:var(--font)}
+.cm-unit{font-size:.6rem;color:rgba(35,35,35,.4);margin-top:.1rem;letter-spacing:.04em}
+.cm-change{font-size:.68rem;font-weight:500;margin-top:.35rem;padding:.15rem .5rem;border-radius:20px;display:inline-block}
 .cm-up{background:rgba(16,185,129,.1);color:#059669}
 .cm-down{background:rgba(239,68,68,.1);color:#dc2626}
 .cm-flat{background:rgba(35,35,35,.06);color:rgba(35,35,35,.5)}
 .cm-card.loading .cm-price{color:rgba(35,35,35,.2)}
-@media(max-width:768px){.cm-price{font-size:1.4rem}.cm-card{padding:1rem}}
+@media(max-width:768px){.cm-price{font-size:1.1rem}.cm-card{padding:.8rem}.cm-icon{width:30px;height:30px}}
 </style>
 </head>
 <body>
@@ -31,7 +41,7 @@
 <header class="hdr scrolled" id="hdr">
 <div class="hdr-in">
     <a class="logo" href="index.html" aria-label="Outwest Energy Home">
-        <svg class="logo-mark" viewBox="140 -10 480 190" aria-hidden="true">
+        <svg class="logo-mark" viewBox="120 -15 500 200" aria-hidden="true">
             <path class="logo-icon" d="M424.6,169.4c1.68,0,14.78-24.08,14.46-30.12-.57-10.83-34.16-48.09-38.51-59.43l8.87-9.07h11.55l93.5,98.62h72.64l-103.95-99.98-16.64,15.28-36.08-46.19-15.56,14.87L361.77,0l-83.88,88.43-32.53-24.82-96.65,105.78h54.68c4.07,0,47.26-53.32,56.29-58.79l29.47,24.35L359.5,13.32l33.94,44.8-27.58,28.23h12.78l-66.51,83.05h112.47Z" fill="#2f87c3"/>
         </svg>
         <span class="logo-wordmark"><span class="logo-txt">OUTWEST</span> <span class="logo-sub">ENERGY</span></span>
@@ -63,10 +73,23 @@
 
 
     <!-- Market Data -->
-    <section class="sec" style="padding:3rem 0 1rem">
+    <section class="sec bg-m">
+<div class="ctr">
+    <div class="slbl rv">Company</div>
+    <h2 class="sttl rv rv-d1">Outwest <strong>Updates</strong></h2>
+    <div class="g3" style="margin-top:2rem">
+        <div class="news-item rv rv-d1"><div class="news-date">February 2026</div><h3>Website Launch</h3><p>Outwest Energy's website is now live. We'll share company updates, milestones, and industry perspectives here as we grow.</p></div>
+        <div class="news-item rv rv-d2"><div class="news-date">January 2026</div><h3>Office Established</h3><p>Our Calgary office is operational. The team is actively evaluating acquisition opportunities across the WCSB.</p></div>
+        <div class="news-item rv rv-d3"><div class="news-date">Q4 2025</div><h3>Company Founded</h3><p>Outwest Energy Inc. was incorporated with a mandate to acquire and operate energy assets in Western Canada.</p></div>
+    </div>
+</div>
+</section>
+
+    <!-- Commodity Prices -->
+<section class="sec" style="padding:2rem 0 1.5rem">
         <div class="ctr">
             <div class="slbl rv">Market</div>
-            <h2 class="sttl rv rv-d1" style="margin-bottom:1.5rem">Commodity <strong>Snapshot</strong></h2>
+            <h2 class="sttl rv rv-d1" style="margin-bottom:1.5rem">Commodity Prices</h2>
             <div class="g4" id="commodityGrid" style="gap:1.2rem">
                 <div class="cm-card" id="card-wti">
                     <div class="cm-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12l10-10 10 10"/><circle cx="12" cy="16" r="3"/></svg></div>
@@ -100,19 +123,6 @@
             <p style="font-size:.75rem;color:rgba(35,35,35,.4);margin-top:1rem;text-align:right" id="cm-updated">Fetching live data...</p>
         </div>
     </section>
-
-    <!-- Company Updates -->
-<section class="sec bg-m">
-<div class="ctr">
-    <div class="slbl rv">Company</div>
-    <h2 class="sttl rv rv-d1">Outwest <strong>Updates</strong></h2>
-    <div class="g3" style="margin-top:2rem">
-        <div class="news-item rv rv-d1"><div class="news-date">February 2026</div><h3>Website Launch</h3><p>Outwest Energy's website is now live. We'll share company updates, milestones, and industry perspectives here as we grow.</p></div>
-        <div class="news-item rv rv-d2"><div class="news-date">January 2026</div><h3>Office Established</h3><p>Our Calgary office is operational. The team is actively evaluating acquisition opportunities across the WCSB.</p></div>
-        <div class="news-item rv rv-d3"><div class="news-date">Q4 2025</div><h3>Company Founded</h3><p>Outwest Energy Inc. was incorporated with a mandate to acquire and operate energy assets in Western Canada.</p></div>
-    </div>
-</div>
-</section>
 
 <footer class="ftr">
 <div class="ctr">
