@@ -36,11 +36,11 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul,ol{list
 .hdr.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom-color:rgba(26,41,62,.06);box-shadow:0 2px 40px rgba(26,41,62,.08)}
 .hdr-in{max-width:var(--max);margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:100%}
 .logo{display:flex;align-items:center;gap:.6rem;cursor:pointer}
-.logo-mark{height:36px;width:auto}
+.logo-mark{height:42px;width:auto}
 .logo-icon{transition:fill .35s}
 .logo-wordmark{display:flex;flex-direction:column;line-height:1;gap:0}
 .logo-txt{font-family:var(--font);font-size:1.15rem;font-weight:300;letter-spacing:.12em;transition:color .35s}
-.logo-sub{font-family:var(--font);font-size:.55rem;font-weight:300;letter-spacing:.5em;transition:color .35s}
+.logo-sub{font-family:var(--font);font-size:.55rem;font-weight:300;letter-spacing:.38em;transition:color .35s}
 .hdr.at-top .logo-icon{fill:var(--mist)}
 .hdr.at-top .logo-txt{color:var(--mist)}
 .hdr.at-top .logo-sub{color:rgba(245,247,250,.5)}
@@ -181,7 +181,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul,ol{list
 .ticker-wrap::after{right:0;background:linear-gradient(270deg,var(--navy),transparent)}
 .ticker-label{position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;padding:0 1.5rem;background:var(--blue);color:var(--white);font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;z-index:3;white-space:nowrap}
 .ticker-label svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;margin-right:.5rem;stroke-linecap:round;stroke-linejoin:round}
-.ticker-track{display:flex;animation:tickerScroll var(--ticker-duration,60s) linear infinite;padding:.85rem 0 .85rem 140px}
+.ticker-track{display:flex;animation:tickerScroll var(--ticker-duration,60s) linear infinite;padding:.85rem 0 .85rem 140px;will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .ticker-track:hover{animation-play-state:paused}
 .ticker-item{display:flex;align-items:center;white-space:nowrap;padding:0 2rem;flex-shrink:0}
 .ticker-item a{color:rgba(245,247,250,.75);font-size:.85rem;font-weight:300;transition:color .3s;display:flex;align-items:center;gap:.5rem}
